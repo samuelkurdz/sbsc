@@ -1,0 +1,15 @@
+.chart {
+	width: 345px;
+	// height: 472px;
+	border-radius: 10px;
+	padding: 20px 10px;
+}
+
+select {
+	padding: 6px 10px;
+	width: 95px;
+	height: 30px;
+	border-radius: 5px;
+	@apply ring-0 border-0 text-xs;
+	box-shadow: 0px 10px 20px rgba(184, 193, 209, 0.26);
+}
