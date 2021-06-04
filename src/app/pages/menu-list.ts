@@ -35,27 +35,3 @@ const Menus: Menu[] = [
 
 export default Menus;
 
-[
-	{
-		"id":"1",
-		"logged_user":"Vald Collins",
-		"notification_count":18,
-		"chart_stat": [
-			{
-				"label":"capex",
-				"spent":423234,
-				"balance":874923
-			},
-			{
-				"label":"opex",
-				"spent":73728,
-				"balance":4678203
-			},
-			{
-				"label":"assets",
-				"in-use":2334,
-				"active":37784
-			}
-		]
-	}
-]
