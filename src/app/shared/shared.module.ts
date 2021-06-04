@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SvgComponent } from './svg/svg.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -9,10 +10,12 @@ import { SvgComponent } from './svg/svg.component';
     SvgComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
   exports: [
-    SvgComponent
+    SvgComponent,
+    HttpClientModule
   ]
 })
 export class SharedModule { }

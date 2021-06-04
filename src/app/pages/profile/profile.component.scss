@@ -1,0 +1,61 @@
+.profile {
+	font-family: 'Nunito Sans', sans-serif;
+	// background: #F2F7FC;
+}
+
+.customize {
+	color: #1B5BAC;
+
+}
+
+.card {
+	width: 400px;
+	padding: 15px;
+	border-radius: 10px;
+
+	h3 {
+		font-size: 15px;
+	}
+
+	button, p {
+		font-size: 12px;
+	}
+}
+
+.card-1 {
+	color: white;
+	background: linear-gradient(147.87deg, #133F77 26.36%, #0F9CDA 125.59%);
+	@apply space-y-2;
+
+	.welcome {
+		color: #78C2ED;
+	}
+	button {
+		background: white;
+		box-shadow: 0px 10px 20px rgba(16, 60, 116, 0.3);
+		color: #1B5BAC;
+		padding: 6px 10px;
+		border-radius: 6px;
+
+	}
+}
+
+.card-2 {
+	background: #E5EEFB;
+
+	color: black;
+	@apply space-y-2;
+
+	.action {
+		color: #133F77;
+		;
+	}
+	button {
+		color: white;
+		padding: 6px 10px;
+
+		background: #1B5BAC;
+		box-shadow: 0px 10px 20px rgba(16, 60, 116, 0.3);
+		border-radius: 6px;
+	}
+}

@@ -4,6 +4,7 @@ import { PagesRoutingModule, routedPagesComponents } from './pages-routing.modul
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { SharedModule } from '../shared/shared.module';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -12,6 +13,7 @@ import { SharedModule } from '../shared/shared.module';
     ...routedPagesComponents,
     SidebarComponent,
     TopbarComponent,
+    ProfileComponent,
   ],
   imports: [
     CommonModule,

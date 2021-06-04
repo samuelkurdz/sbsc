@@ -1,0 +1,58 @@
+.top-bar {
+	font-family: 'Nunito Sans', sans-serif;
+	// background: #F2F7FC;
+}
+section {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 10px 20px rgba(184, 193, 209, 0.1);
+	padding: 8px;
+
+	display: flex;
+	gap: 20px;
+	h3 {
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	p {
+		font-size: 10px;
+	}
+
+	#notif-num {
+		font-size: 16px;
+		text-align: center;
+		max-width: 45px;
+		width: 44px;
+		max-height: 45px;
+		height: 44px;
+		border-radius: 10px;
+		color: white;
+		background-color: orangered;
+		padding: 6px;
+	}
+	#logout {
+		text-align: center;
+		max-width: 45px;
+		width: 44px;
+		max-height: 45px;
+		height: 44px;
+		border-radius: 10px;
+		color: white;
+		background-color: navy;
+		font-size: 8px;
+		padding: 6px;
+	}
+}
+
+#notification {
+	background: url(../../../assets/images/notification.png) white;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#logout-action {
+	background: url(../../../assets/images/logout.png) white;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
