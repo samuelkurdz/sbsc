@@ -11,6 +11,13 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      gridTemplateRows: {
+        // Simple 8 row grid
+       '8': 'repeat(8, minmax(0, 1fr))',
+      },
+      gridRow: {
+        'span-7': 'span 7 / span 7',
+       }
     },
   },
   variants: {
