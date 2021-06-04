@@ -1,0 +1,21 @@
+.side-bar {
+	background-color:#EFF5FB;
+	height: 100%;
+}
+
+a {
+	color: black;
+	border-radius: 5px;
+
+	&:hover, &:focus {
+		background: #FFFFFF;
+		color: #133F77;
+		box-shadow: 0px 10px 20px rgba(184, 193, 209, 0.1);
+	}
+}
+
+.active-button {
+	background: #FFFFFF;
+	color: #133F77;
+	box-shadow: 0px 10px 20px rgba(184, 193, 209, 0.1);
+}
