@@ -12,8 +12,4 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addFocusStyle(event: Event) {
-    console.log(event);
-  }
-
 }

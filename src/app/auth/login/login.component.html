@@ -1,1 +1,26 @@
-<p>login works!</p>
+<div class="block md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-0 h-screen">
+  <div class="lg:col-span-2 bg-black hidden md:block"></div>
+  <div class="h-full flex flex-col content-center pt-10 md:pt-32 2xl:pt-56 px-8 md:px-14 2xl:px-20">
+		<img src="assets/images/logos/small.png" class="w-36 h-8 mb-11" alt="logo">
+		<h1 class="text-4xl font-bold mb-4">Login to <br> your account</h1>
+		<p class="text-xs">Welcome back! Please login to your account</p>
+		<form class="space-y-6 mt-7">
+			<div class="form-group group flex">
+				<span class="inline-flex items-center px-3 rounded-l-md bg-white text-black text-sm">
+					KTS12562892
+				</span>
+				<span style="width: 1px;" class="h-3.5 bg-black my-auto"></span>
+				<input type="text" name="username" id="username" placeholder="Enter username">
+			</div>
+			<div class="form-group group group-focus:border group-focus:border-indigo-600">
+				<input type="text" name="password" id="password" placeholder="Enter password">
+			</div>
+			<button
+				type="submit" routerLink="/"
+				class="w-full text-white py-2.5 text-xs rounded-md uppercase">
+				log in
+			</button>
+			<p id="forget-password" class="text-center text-xs cursor-pointer">Forget Password?</p>
+		</form>
+	</div>
+</div>
