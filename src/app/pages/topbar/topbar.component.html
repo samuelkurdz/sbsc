@@ -6,13 +6,13 @@
 		<section id="notification">
 			<div>
 				<h3>Notifications Center</h3>
-				<p class="font-extralight">You have 2 unread notifications</p>
+				<p class="font-extralight">You have <b class="font-bold">{{user.notification_count}}</b> unread notifications</p>
 			</div>
-			<p id="notif-num" class="my-auto">2</p>
+			<p id="notif-num" class="my-auto">{{user.notification_count}}</p>
 		</section>
 		<section id="logout-action">
 			<div>
-				<h3>Chidimma Nwanya</h3>
+				<h3>{{user.logged_user}}</h3>
 				<p class="font-extralight">Vanity By Juls</p>
 			</div>
 			<div id="logout">

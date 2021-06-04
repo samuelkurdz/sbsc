@@ -5,6 +5,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { SharedModule } from '../shared/shared.module';
 import { ProfileComponent } from './profile/profile.component';
+import { ChartComponent } from './chart/chart.component';
 
 
 
@@ -14,6 +15,7 @@ import { ProfileComponent } from './profile/profile.component';
     SidebarComponent,
     TopbarComponent,
     ProfileComponent,
+    ChartComponent,
   ],
   imports: [
     CommonModule,

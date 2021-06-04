@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
   chartData: ChartData[] = [];
 
   constructor(
-    private userService: UserService
+    private userService: UserService,
   ) { }
 
   ngOnInit(): void {
@@ -27,10 +27,11 @@ export class DashboardComponent implements OnInit {
 
   getUserData() {
     this.userService.getUser().subscribe((response) => {
-      console.log(response[0]);
-
       const { id, logged_user, notification_count, chart_stat } = response[0];
-      
-    })
+      this.user = {
+        id, logged_user, notification_count
+      };
+      this.chartData = chart_stat;
+    });
   }
 }

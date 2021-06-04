@@ -3,9 +3,9 @@
 		<sbsc-sidebar></sbsc-sidebar>
 	</aside>
   <header class="dash-profile col-span-5">
-		<sbsc-topbar></sbsc-topbar>
+		<sbsc-topbar [user]="user"></sbsc-topbar>
 	</header>
   <div class="dash-profile row-span-7 col-span-5">
-		<sbsc-profile></sbsc-profile>
+		<sbsc-profile [user]="user" [charts]="chartData"></sbsc-profile>
 	</div>
 </div>
