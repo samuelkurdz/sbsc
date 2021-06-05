@@ -13,7 +13,31 @@ export class ProfileComponent implements OnInit, OnChanges {
   firstName: string | undefined;
   presentDate;
   parsedDate = '';
-  constructor( ) {
+
+  colors = [
+    {
+      dataCardColor: '#FBFCFE',
+      fullCardBgColor: '#FFFFFF',
+      totalColor: '#1B5BAC',
+      balanceColor: '#E2EDF8',
+      textColor: 'black'
+    },
+    {
+      dataCardColor: '#FFF7F5',
+      fullCardBgColor: '#FFFFFF',
+      totalColor: '#FF6542',
+      balanceColor: '#F8E9E2',
+      textColor: 'black'
+    },
+    {
+      dataCardColor: '#0A709D',
+      fullCardBgColor: 'linear-gradient(0deg, #0F9CDA 26.48%, #00C49A 175.16%)',
+      totalColor: '#F6AE2D',
+      balanceColor: 'white',
+      textColor: 'white'
+    }
+  ]
+  constructor() {
     this.presentDate = new Date().toDateString();
     this.firstName = this.user.logged_user?.split(' ')[0];
   }

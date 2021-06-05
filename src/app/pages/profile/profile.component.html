@@ -1,17 +1,17 @@
-<div class="profile pl-5 pr-10 xl:pr-20 mt-2.5">
+<div class="profile pl-5 pr-10 lg:pr-20 mt-2.5">
 	<header class="flex justify-between items-center">
 		<h3 class="font-bold">Dashboard</h3>
 		<div class="flex text-xs gap-x-4 items-center">
-			<p id="customize">
+			<p id="customize" class="pointer-events-auto">
 				<img class="w-6 h-auto" src="assets/images/tool.png" alt="tool">
-				Customize Dashboard
+				<span class="hidden md:block">Customize Dashboard</span>
 			</p>
 			<span style="width: 1px;" class="h-3.5 bg-gray-300 my-auto"></span>
 			<p>{{parsedDate}}</p>
 		</div>
 	</header>
 
-	<section class="flex flex-col lg:flex-row gap-x-6 gap-y-10 lg:gap-x-10 justify-between mt-3">
+	<section class="flex flex-col lg:flex-row gap-x-6 gap-y-10 lg:gap-x-14 justify-between mt-3">
 		<div class="card card-1 relative">
 			<h3 class="welcome uppercase">
 				Welcome Back {{firstName}}
@@ -46,9 +46,11 @@
 		</div>
 	</section>
 
-	<div class="mt-10 flex lg:flex-row justify-between gap-3.5 overflow-x-auto">
-		<ng-container *ngFor="let item of charts">
-			<sbsc-chart></sbsc-chart>
+	<div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+		<ng-container *ngFor="let item of charts; let index = index">
+			<sbsc-chart
+				[chart]="item" [colors]="colors[index]" >
+			</sbsc-chart>
 		</ng-container>
 	</div>
 </div>

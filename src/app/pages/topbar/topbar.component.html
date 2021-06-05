@@ -1,4 +1,4 @@
-<div class="top-bar flex justify-between items-center h-full pl-5 pr-10 xl:pr-20">
+<div class="top-bar flex justify-between items-center h-full pl-5 pr-10 lg:pr-20">
 	<div class="min-w-max flex flex-col gap-y-0.5 cursor-pointer">
 		<span class="w-7 h-0.5 bg-black rounded-sm"></span>
 		<span class="w-5 h-0.5 bg-black rounded-sm"></span>
@@ -10,7 +10,7 @@
 				<p class="font-extralight">You have <b class="font-bold">{{user.notification_count}}</b> unread notifications</p>
 			</div>
 			<p id="notif-num" class="my-auto">
-				<span class="my-auto">{{user.notification_count}}</span>
+				{{user.notification_count}}
 			</p>
 		</section>
 		<section id="logout-action">

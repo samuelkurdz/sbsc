@@ -1,5 +1,7 @@
-<div class="chart w-full bg-white">
-	<div class="chart-header flex gap-x-5 justify-between">
+<div
+		[style.background]="colors.fullCardBgColor"
+		class="chart w-full px-4 py-4 rounded-lg space-y-4">
+	<div class="chart-header flex justify-between">
 		<div>
 			<h3 class="text-xs font-bold">Annual Play Budget</h3>
 			<p style="font-size: 10px">Summary</p>
@@ -11,7 +13,7 @@
 		</select>
 	</div>
 
-	<div class="chart-donut">
+	<div class="chart-donut" style="width: 100%; height: 100%;">
 		<canvas baseChart 
 			[data]="doughnutChartData"
 			[options]="options"
@@ -21,34 +23,41 @@
 		</canvas>
 	</div>
 
-	<div class="chart-data mt-5 space-y-3">
+	<div
+			[style.background]="colors.dataCardColor" [style.color]="colors.textColor"
+			class="chart-data mt-5 space-y-2 px-3 pt-2 pb-3">
 		<section class="flex justify-between">
 			<div>
 				<p class="text-xs font-light">Total Play (NGN)</p>
-				<h3 class="text-sm font-black">{{50000000|number}}</h3>
+				<h3 class="text-sm font-black">
+					{{ used.value + balance.value|number}}
+				</h3>
 			</div>
 			<div>
 				<div class="flex items-center">
-					<div class="w-2 h-2 bg-blue-900 mr-3 rounded-full"></div>
-					<p class="text-xs font-light">Total Spent</p>
+					<div [style.background]="colors.totalColor" class="w-2 h-2 mr-3 rounded-full"></div>
+					<p class="text-xs font-light">
+						{{used.title|titlecase}}
+					</p>
 				</div>
 				<div class="flex items-center">
-					<div class="w-2 h-2 bg-blue-300 mr-3 rounded-full"></div>
-					<p class="text-xs">Balance</p>
+					<div [style.background]="colors.balanceColor" class="w-2 h-2 mr-3 rounded-full"></div>
+					<p class="text-xs">
+						{{balance.title|titlecase}}
+					</p>
 				</div>
 			</div>
 		</section>
 
 		<section class="flex justify-between">
 			<div>
-				<p class="text-xs font-light">Total Spent (NGN)</p>
-				<h3 class="text-sm font-black">{{50000000|number}}</h3>
+				<p class="text-xs font-light">{{used.title|titlecase}} (NGN)</p>
+				<h3 class="text-sm font-black">{{used.value|number}}</h3>
 			</div>
 			<div>
-				<p class="text-xs font-light">Balance (NGN)</p>
-				<h3 class="text-sm font-black">{{50000000|number}}</h3>
+				<p class="text-xs font-light">{{balance.title|titlecase}} (NGN)</p>
+				<h3 class="text-sm font-black">{{balance.value| number}}</h3>
 			</div>
 		</section>
-
 	</div>
 </div>
