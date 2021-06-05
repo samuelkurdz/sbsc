@@ -11,6 +11,16 @@
 		</select>
 	</div>
 
+	<div class="chart-donut">
+		<canvas baseChart 
+			[data]="doughnutChartData"
+			[options]="options"
+			[colors]="chartColors"
+			[labels]="doughnutChartLabels"
+			[chartType]="doughnutChartType">
+		</canvas>
+	</div>
+
 	<div class="chart-data mt-5 space-y-3">
 		<section class="flex justify-between">
 			<div>
