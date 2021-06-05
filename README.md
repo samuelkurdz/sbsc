@@ -14,5 +14,3 @@ Navigate to `https://sbsc.netlify.app/` for the live server
 - [Tailwindcss](https://tailwindcss.com/)
 - [Charts.js](https://www.chartjs.org/docs/latest/)
 
-
-

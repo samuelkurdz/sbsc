@@ -1,5 +1,8 @@
 .profile {
 	font-family: 'Nunito Sans', sans-serif;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: -webkit-fill-available;
 	// background: #F2F7FC;
 }
 
@@ -9,7 +12,7 @@
 }
 
 .card {
-	width: 400px;
+	width: -webkit-fill-available;
 	padding: 15px;
 	border-radius: 10px;
 
