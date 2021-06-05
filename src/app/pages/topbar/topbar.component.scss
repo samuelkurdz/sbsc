@@ -9,6 +9,7 @@ section {
 	padding: 8px;
 
 	display: flex;
+	align-items: center;
 	gap: 20px;
 	h3 {
 		font-size: 14px;
@@ -29,7 +30,8 @@ section {
 		border-radius: 10px;
 		color: white;
 		background-color: orangered;
-		padding: 6px;
+		display: flex;
+		justify-content: center;
 	}
 	#logout {
 		text-align: center;

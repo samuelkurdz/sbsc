@@ -6,9 +6,11 @@
 	// background: #F2F7FC;
 }
 
-.customize {
+#customize {
 	color: #1B5BAC;
-
+	display: flex;
+	gap: 4px;
+	align-items: center;
 }
 
 .card {
